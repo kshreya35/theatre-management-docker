@@ -1,0 +1,160 @@
+/* producer.css - Clean, vibrant red aesthetic */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #ffeaea; /* Soft light background for contrast */
+    color: #330000;
+    padding: 30px;
+}
+
+/* Page title */
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #b20000;
+}
+
+/* Section styling */
+section {
+    background: #fff; /* Clean white cards */
+    border-radius: 20px;
+    padding: 25px 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    color: #b20000;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+form input, form select {
+    flex: 1 1 120px;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 2px solid #ff4b5c;
+    font-size: 16px;
+    outline: none;
+    background: #fff; /* white input background */
+    color: #330000;
+    transition: all 0.3s ease;
+}
+
+form input::placeholder, form select {
+    color: #b20000;
+}
+
+form input:focus, form select:focus {
+    border-color: #b20000;
+    box-shadow: 0 0 8px rgba(178, 0, 0, 0.3);
+}
+
+/* Buttons */
+form button {
+    flex: 1 1 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #b20000; /* solid red button */
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background: #ff4b5c; /* brighter red on hover */
+    transform: scale(1.05);
+}
+
+/* Theatre cards */
+#availableTheatres, #bookedTheatres {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 15px;
+}
+
+#availableTheatres .theatre-card,
+#bookedTheatres .theatre-card {
+    background: #fff; /* clean white card */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+#availableTheatres .theatre-card:hover,
+#bookedTheatres .theatre-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Optional status badge */
+.theatre-card .status {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    background: #b20000;
+}
+
+/* Delete button inside card */
+.theatre-card button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 8px;
+    background: #ff4b5c;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.theatre-card button:hover {
+    background: #b20000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .dashboard {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    form input, form select, form button {
+        width: 100%;
+    }
+}

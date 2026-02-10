@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Producer Dashboard</title>
+<link rel="stylesheet" href="/static/css/producer.css">
+<script type="module" src="/static/js/producer.js"></script>
+</head>
+<body>
+<h1>Producer Dashboard</h1>
+
+<section>
+    <h2>Search Available Theatres</h2>
+    <form id="searchForm">
+        <input type="date" id="filterDate">
+        <select id="seatCondition">
+            <option value="gt">Greater Than</option>
+            <option value="lt">Less Than</option>
+            <option value="eq">Equal</option>
+        </select>
+        <input type="number" id="seatNumber">
+        <button type="submit">Search</button>
+    </form>
+    <div id="availableTheatres"></div>
+</section>
+
+<section>
+    <h2>My Booked Theatres</h2>
+    <div id="bookedTheatres"></div>
+</section>
+
+</body>
+</html>

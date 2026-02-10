@@ -1,0 +1,106 @@
+/* auth.css - Clean vibrant red themed login/register pages */
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffeaea; /* soft light background for contrast */
+}
+
+.container {
+    background-color: #fff; /* clean white container */
+    padding: 40px 30px;
+    border-radius: 15px;
+    width: 350px;
+    max-width: 90%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.container h2 {
+    margin-bottom: 25px;
+    color: #b20000; /* deep red title */
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 2px solid #ff4b5c; /* input border red */
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    background: #fff; /* white input */
+    color: #330000;
+    transition: 0.3s;
+}
+
+form input:focus, form select:focus {
+    border-color: #b20000; /* deep red focus */
+    box-shadow: 0 0 8px rgba(178, 0, 0, 0.3);
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #b20000; /* solid red button */
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #ff4b5c; /* brighter red on hover */
+    transform: scale(1.05);
+}
+
+p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #800000; /* dark red text */
+}
+
+p a {
+    color: #b20000; /* deep red link */
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 400px) {
+    .container {
+        padding: 30px 20px;
+    }
+
+    form button {
+        font-size: 16px;
+    }
+}

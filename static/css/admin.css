@@ -1,0 +1,128 @@
+/* admin.css - Clean, vibrant red theme (colors updated) */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #ffeaea; /* Soft light background */
+    color: #330000;
+    padding: 20px;
+}
+
+/* Page title */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 36px;
+    color: #b20000;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Dashboard layout */
+.dashboard {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Form container */
+.form-container {
+    flex: 1 1 350px;
+    background: #fff; /* clean white */
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.15);
+}
+
+.form-container h2 {
+    color: #b20000;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Inputs and buttons */
+form input, form select {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 2px solid #ff4b5c;
+    border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+    background: #fff; /* white input background */
+    color: #330000;
+    transition: 0.3s;
+}
+
+form input::placeholder {
+    color: #b20000;
+}
+
+form input:focus, form select:focus {
+    border-color: #b20000;
+    box-shadow: 0 0 12px rgba(178, 0, 0, 0.3);
+    background: #fff;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 12px;
+    background: #b20000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    transform: scale(1.05);
+    background: #ff4b5c;
+}
+
+/* Theatre list & summary */
+.theatre-list {
+    background: #fff; /* clean white card */
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    min-height: 150px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.theatre-list:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Section headings */
+h2 {
+    color: #b20000;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .dashboard {
+        flex-direction: column;
+    }
+}

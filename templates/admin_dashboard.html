@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard</title>
+<link rel="stylesheet" href="/static/css/admin.css">
+<script type="module" src="/static/js/admin.js"></script>
+</head>
+<body>
+<h1>Admin Dashboard</h1>
+
+<section>
+    <div class="dashboard">
+
+    <!-- Left: Add Theatre Form -->
+    <div class="form-container">
+        <h2>Add Theatre</h2>
+        <form id="addTheatreForm">
+            <input type="text" id="name" placeholder="Theatre Name" required>
+            <input type="number" id="seats" placeholder="Seats" required>
+            <input type="date" id="date" required>
+            <input type="time" id="time" required>
+            <input type="number" id="price" placeholder="Price" required>
+            <button type="submit">Add Theatre</button>
+        </form>
+    </div>
+
+    <!-- Right: Theatre Lists -->
+    <div>
+        <h2>All Theatres</h2>
+        <div id="allTheatres" class="theatre-list"></div>
+
+        <h2>Booked Theatres Summary</h2>
+        <div id="summary" class="theatre-list"></div>
+    </div>
+
+</div>
+
+</body>
+</html>
